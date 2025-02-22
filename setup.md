@@ -26,7 +26,7 @@ step6 :- now paste this command
         within the script block
 
 step7 :- now go the index.html file
-         and add 
+         and add this link
          <link rel="stylesheet" href="/X-clone/css/output.css">
 
 step8 :- now run the command 
