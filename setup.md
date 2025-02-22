@@ -9,7 +9,9 @@ step2 :-
       
       npm install -D tailwindcss@3
 
-step3 :- npm tailwindcss init
+step3 :- 
+
+      npm tailwindcss init
 
 step4 :- See this step specifies for this project only 
 
