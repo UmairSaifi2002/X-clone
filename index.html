@@ -1,12 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home/X</title>
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="/X-clone/css/output.css">
-</head>
-<body>
-    <div class="bg-slate-400">Hey Henry</div>
+
+<body class="bg-black text-white h-screen">
+    <!-- <div class="bg-slate-400">Hey Henry</div> -->
+    <div class="overflow-y-auto [-webkit-scrollbar]:hidden [scrollbar-width:none]">
+        <div class="flex container mx-auto h-screen ">
+
+            <div class="first w-[70%] overflow-y-hidden">
+                <div class="logo invert my-8">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sidebar flex justify-end  lg:justify-center">
+                    <ul class="flex flex-col text-xl space-y-6 px-11 font-bold">
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined text-xl">
+                                home
+                            </span>
+                            <span class=" hidden xl:block">Home</span>
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full  ">
+                            <span class="material-symbols-outlined text-xl">
+                                search
+                            </span>
+                            <span class=" hidden xl:block">Explore</span>
+    
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined text-xl">
+                                Notifications
+                            </span>
+                            <span class=" hidden xl:block">Notifications</span>
+    
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined text-xl">
+                                Mail
+                            </span>
+                            <span class=" hidden xl:block">Messages</span>
+    
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined text-xl">
+                                chat
+                            </span>
+                            <span class=" hidden xl:block">Grok</span>
+    
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined text-xl">
+                                list
+                            </span>
+                            <span class=" hidden xl:block">Lists</span>
+    
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined text-xl">
+                                bookmarks
+                            </span>
+                            <span class=" hidden xl:block">Bookmarks</span>
+    
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined">
+                                communities
+                            </span>
+                            <span class=" hidden xl:block">Communities</span>
+    
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined">
+                                workspace_premium
+                            </span>
+                            <span class=" hidden xl:block">Premium</span>
+    
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined text-xl">
+                                person
+                            </span>
+                            <span class=" hidden xl:block">Profile</span>
+    
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 w-fit px-3 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full ">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                            <span class=" hidden xl:block">More</span>
+    
+                        </li>
+                        <li>
+                            <button class="rounded-full bg-blue-700 text-xs p-0 px-4 m-0 h-[35px] w-full">POST</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="second w-full border-[1px] border-x-white border-y-black overflow-y-auto [-webkit-scrollbar]:hidden [scrollbar-width:none]">
+                <!--have some comments-->
+                <div class="top flex p-3 relative">
+                    <div class="absolute w-16 h-1 rounded-full bg-blue-500 bottom-0 left-[19%]"></div>
+                    <div class="left  w-1/2 flex justify-center font-bold text-md cursor-pointer">For you</div>
+                    <div class="right  w-1/2 flex justify-center font-bold text-md cursor-pointer">Following</div>
+                    <div class="setting cursor-pointer ">
+                        <span class="material-symbols-outlined text-sm">
+                            settings
+                        </span>
+                    </div>
+                </div>
+                <div class="h-[1px] w-full bg-gray-500"></div>
+    
+                <div class="whatishappening flex gap-4 m-5">
+                    <div class="image">
+                        <img src="/X-clone/photo/taj.jpg" alt="Taj mahal" class="h-10 w-16 rounded-full">
+                    </div>
+                    <div class="w-full">
+                        <input class="w-full h-5 my-1 bg-[#16181c] rounded-2xl text-white mx-3 p-4 outline-none" type="text"
+                            placeholder="What is happening?">
+                        <div class="text-blue-700 flex align-middle mx-4 my-3">
+                            <span class="material-symbols-outlined text-sm mx-2 cursor-pointer">
+                                globe_asia
+                            </span>
+                            <span class="text-xs cursor-pointer">EveryOne can reply!</span>
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-500 mx-4 "></div>
+                        <div class="something mx-5 flex text-blue-700 justify-between items-center">
+                            <div class="logos my-2">
+                                <span class="material-symbols-outlined text-lg cursor-pointer">
+                                    imagesmode
+                                </span>
+                                <span class="material-symbols-outlined text-lg cursor-pointer">
+                                    gif_box
+                                </span>
+                                <span class="material-symbols-outlined text-lg cursor-pointer">
+                                    format_list_bulleted
+                                </span>
+                                <span class="material-symbols-outlined text-lg cursor-pointer">
+                                    sentiment_satisfied
+                                </span>
+                                <span class="material-symbols-outlined text-lg cursor-pointer">
+                                    calendar_clock
+                                </span>
+                                <span class="material-symbols-outlined text-lg cursor-pointer">
+                                    location_on
+                                </span>
+                            </div>
+                            <div class="postButto text-white text-md">
+                                <button class="rounded-full bg-blue-700 text-xs p-0 px-4 m-0 h-[22px]">POST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="h-[1px] w-full bg-gray-500"></div>
+    
+                <div class="posts">
+                    <div class="post flex flex-col">
+                        <div class="InfoPart flex flex-row">
+                            <div class="userimage">
+                                <img src="/X-clone/photo/taj 1.jpg" alt="Taj Mahal"
+                                    class="w-[55px] rounded-[25px] m-[15px]">
+                            </div>
+                            <div class="flex pt-[23px] gap-16 font-bold">
+                                <div class="userName text-xs">
+                                    <span> non asthetic things @PicturesFolder . 6h </span>
+                                </div>
+                                <div class="subscribe flex">
+                                    <button
+                                        class="rounded-full bg-white text-black text-xs p-0 px-2 m-0 h-[20px]">Subscribe</button>
+                                    <!-- <span class="material-symbols-outlined">
+                                        more_horiz
+                                    </span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="postContent ml-6 flex flex-col gap-2 mb-5">
+                            <div class="">legend</div>
+                            <img src="/X-clone/photo/taj.jpg" alt="Taj Mahal" class="w-[95%] rounded-xl">
+                            <div class="icons flex justify-evenly text-[gray]">
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        chat_bubble
+                                    </span>
+                                    <span class="text-[13px]">11k</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer  hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        repeat
+                                    </span>
+                                    <span class="text-[13px]">3k</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        favorite
+                                    </span>
+                                    <span class="text-[13px]">5.5M</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        bar_chart_4_bars
+                                    </span>
+                                    <span class="text-[13px]">3.44M</span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <span
+                                            class="material-symbols-outlined text-[20px] hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                            bookmark
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined text-[20px] hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                            upload
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="h-[1px] w-full bg-gray-500"></div>
+    
+                <div class="posts">
+                    <div class="post flex flex-col">
+                        <div class="InfoPart flex flex-row">
+                            <div class="userimage">
+                                <img src="/X-clone/photo/taj 1.jpg" alt="Taj Mahal"
+                                    class="w-[55px] rounded-[25px] m-[15px]">
+                            </div>
+                            <div class="flex pt-[23px] gap-16 font-bold">
+                                <div class="userName text-xs">
+                                    <span> non asthetic things @PicturesFolder . 6h </span>
+                                </div>
+                                <div class="subscribe flex">
+                                    <button
+                                        class="rounded-full bg-white text-black text-xs p-0 px-2 m-0 h-[20px]">Subscribe</button>
+                                    <!-- <span class="material-symbols-outlined">
+                                        more_horiz
+                                    </span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="postContent ml-6 flex flex-col gap-2 mb-5">
+                            <div class="">legend</div>
+                            <img src="/X-clone/photo/taj.jpg" alt="Taj Mahal" class="w-[95%] rounded-xl">
+                            <div class="icons flex justify-evenly text-[gray]">
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        chat_bubble
+                                    </span>
+                                    <span class="text-[13px]">11k</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer  hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        repeat
+                                    </span>
+                                    <span class="text-[13px]">3k</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        favorite
+                                    </span>
+                                    <span class="text-[13px]">5.5M</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        bar_chart_4_bars
+                                    </span>
+                                    <span class="text-[13px]">3.44M</span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <span
+                                            class="material-symbols-outlined text-[20px] hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                            bookmark
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined text-[20px] hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                            upload
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="h-[1px] w-full bg-gray-500"></div>
+    
+                <div class="posts">
+                    <div class="post flex flex-col">
+                        <div class="InfoPart flex flex-row">
+                            <div class="userimage">
+                                <img src="/X-clone/photo/taj 1.jpg" alt="Taj Mahal"
+                                    class="w-[55px] rounded-[25px] m-[15px]">
+                            </div>
+                            <div class="flex pt-[23px] gap-16 font-bold">
+                                <div class="userName text-xs">
+                                    <span> non asthetic things @PicturesFolder . 6h </span>
+                                </div>
+                                <div class="subscribe flex">
+                                    <button
+                                        class="rounded-full bg-white text-black text-xs p-0 px-2 m-0 h-[20px]">Subscribe</button>
+                                    <!-- <span class="material-symbols-outlined">
+                                        more_horiz
+                                    </span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="postContent ml-6 flex flex-col gap-2 mb-5">
+                            <div class="">legend</div>
+                            <img src="/X-clone/photo/taj.jpg" alt="Taj Mahal" class="w-[95%] rounded-xl">
+                            <div class="icons flex justify-evenly text-[gray]">
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        chat_bubble
+                                    </span>
+                                    <span class="text-[13px]">11k</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer  hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        repeat
+                                    </span>
+                                    <span class="text-[13px]">3k</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        favorite
+                                    </span>
+                                    <span class="text-[13px]">5.5M</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        bar_chart_4_bars
+                                    </span>
+                                    <span class="text-[13px]">3.44M</span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <span
+                                            class="material-symbols-outlined text-[20px] hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                            bookmark
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined text-[20px] hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                            upload
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="h-[1px] w-full bg-gray-500"></div>
+    
+                <div class="posts">
+                    <div class="post flex flex-col">
+                        <div class="InfoPart flex flex-row">
+                            <div class="userimage">
+                                <img src="/X-clone/photo/taj 1.jpg" alt="Taj Mahal"
+                                    class="w-[55px] rounded-[25px] m-[15px]">
+                            </div>
+                            <div class="flex pt-[23px] gap-16 font-bold">
+                                <div class="userName text-xs">
+                                    <span> non asthetic things @PicturesFolder . 6h </span>
+                                </div>
+                                <div class="subscribe flex">
+                                    <button
+                                        class="rounded-full bg-white text-black text-xs p-0 px-2 m-0 h-[20px]">Subscribe</button>
+                                    <!-- <span class="material-symbols-outlined">
+                                        more_horiz
+                                    </span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="postContent ml-6 flex flex-col gap-2 mb-5">
+                            <div class="">legend</div>
+                            <img src="/X-clone/photo/taj.jpg" alt="Taj Mahal" class="w-[95%] rounded-xl">
+                            <div class="icons flex justify-evenly text-[gray]">
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        chat_bubble
+                                    </span>
+                                    <span class="text-[13px]">11k</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer  hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        repeat
+                                    </span>
+                                    <span class="text-[13px]">3k</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        favorite
+                                    </span>
+                                    <span class="text-[13px]">5.5M</span>
+                                </div>
+                                <div
+                                    class="flex items-center hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                    <span class="material-symbols-outlined text-[20px]">
+                                        bar_chart_4_bars
+                                    </span>
+                                    <span class="text-[13px]">3.44M</span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <span
+                                            class="material-symbols-outlined text-[20px] hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                            bookmark
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined text-[20px] hover:scale-110 transition-transform duration-200 cursor-pointer hover:text-[white]">
+                                            upload
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="h-[1px] w-full bg-gray-500"></div>
+    
+            </div>
+    
+            <div class="third w-full overflow-y-hidden">
+    
+                <div class="search m-3">
+                    <input type="text" class="w-1/2 rounded-full bg-[#16181c] text-white px-4 py-2" placeholder="search">
+                </div>
+    
+                <div class="whats m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-5">
+                    <h1 class="text-xl font-bold px-3">What Happening </h1>
+                    <div class="item my-3 px-4 hover:bg-gray-800 cursor-pointer">
+                        <div class="text-sm text-gray-600"> Tranding in India </div>
+                        <div class="font-bold"> # Salman Khan </div>
+                        <div class="text-sm text-gray-600"> 40.2K posts </div>
+                    </div>
+                    <div class="item my-3 px-4 hover:bg-gray-800 cursor-pointer">
+                        <div class="text-sm text-gray-600"> Tranding in India </div>
+                        <div class="font-bold"> # Salman Khan </div>
+                        <div class="text-sm text-gray-600"> 40.2K posts </div>
+                    </div>
+                    <div class="item my-3 px-4 hover:bg-gray-800 cursor-pointer">
+                        <div class="text-sm text-gray-600"> Tranding in India </div>
+                        <div class="font-bold"> # Salman Khan </div>
+                        <div class="text-sm text-gray-600"> 40.2K posts </div>
+                    </div>
+                    <div class="item my-3 px-4 hover:bg-gray-800 cursor-pointer">
+                        <div class="text-sm text-gray-600"> Tranding in India </div>
+                        <div class="font-bold"> # Salman Khan </div>
+                        <div class="text-sm text-gray-600"> 40.2K posts </div>
+                    </div>
+                </div>
+    
+                <div class="who m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-5">
+                    <h1 class="text-xl font-bold px-3">Who to follow</h1>
+                    <div class="item px-2 hover:bg-gray-800 cursor-pointer flex justify-around">
+                        <div class="text-xs text-gray-600 w-[25%]">
+                            <img class="rounded-2xl py-1" src="/X-clone/photo/taj.jpg" alt="Taj">
+                        </div>
+                        <div class="font-bold text-xs">
+                            <div class="first"> # Salman Khan </div>
+                            <div class="second text-gray-600 "> @ salman khan </div>
+                        </div>
+                        <button class="bg-slate-300 rounded-full text-black text-xs p-0 px-2 m-0 h-[30px]">follow</button>
+                    </div>
+    
+                    <div class="item px-2 hover:bg-gray-800 cursor-pointer flex justify-around">
+                        <div class="text-xs text-gray-600 w-[25%]">
+                            <img class="rounded-2xl py-1" src="/X-clone/photo/taj 1.jpg" alt="Taj">
+                        </div>
+                        <div class="font-bold text-xs">
+                            <div class="first"> # Salman Khan </div>
+                            <div class="second text-gray-600 "> @ salman khan </div>
+                        </div>
+                        <button class="bg-slate-300 rounded-full text-black text-xs p-0 px-2 m-0 h-[30px]">follow</button>
+                    </div>
+    
+                    <div class="item px-2 hover:bg-gray-800 cursor-pointer flex justify-around">
+                        <div class="text-xs text-gray-600 w-[25%]">
+                            <img class="rounded-2xl py-1" src="/X-clone/photo/taj 2.jpg" alt="Taj">
+                        </div>
+                        <div class="font-bold text-xs">
+                            <div class="first"> # Salman Khan </div>
+                            <div class="second text-gray-600 "> @ salman khan </div>
+                        </div>
+                        <button class="bg-slate-300 rounded-full text-black text-xs p-0 px-2 m-0 h-[30px]">follow</button>
+                    </div>
+    
+                    <div class="showmore px-4 text-blue-600">
+                        <a href="#">show more</a>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

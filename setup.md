@@ -41,4 +41,4 @@ step7 :- now go the index.html file
 step8 :- now run the command 
         
         npm run build
->>>>>>> b1124833e47e537814406088e274bea5f643c19b
+
